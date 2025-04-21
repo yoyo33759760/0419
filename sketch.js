@@ -131,7 +131,7 @@ function createSubMenu() {
   subMenuContainer.style('flex-direction', 'column');
   subMenuContainer.style('gap', '5px'); // 子選單項目間距
 
-  const subMenuLabels = ['W1', 'W2', 'W3', 'W4', 'W5', 'W6', 'W7', 'W8', 'W9'];
+  const subMenuLabels = ['W1', '期中筆記', 'W3', 'W4', 'W5', 'W6', 'W7', 'W8', 'W9'];
 
   for (let label of subMenuLabels) {
     let subButton = createButton(label);
@@ -161,6 +161,8 @@ function createSubMenu() {
       console.log(`${label} 被點擊`);
       if (label === 'W1') {
         showIframe('https://yoyo33759760.github.io/0303-1/'); // 顯示 iframe，載入指定網址
+      } else if (label === '期中筆記') {
+        showIframe('https://hackmd.io/@ohyrLVUdTXeemUyQIuvSmg/S187moMylg'); // 顯示 iframe，載入期中筆記網址
       }
     });
 
